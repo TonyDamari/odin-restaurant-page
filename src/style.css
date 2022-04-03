@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.logo{
+    color: rgb(3, 202, 106);
+    font-size: 80px;
+}
+
+.logo span{
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    animation: light-effect 10s linear infinite;
+}
+.side-bar{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 10%;
+}
+
+.link{
+    display: block;
+    text-decoration: none;
+    color: rgb(3, 202, 106);
+    font-size: 32px;
+    padding: 20px;
+    margin: 50px 20px;
+    transition: 0.8s ease-in-out;
+}
+
+.link:hover{
+    background: #101820ff;
+    border-radius: 15px;
+}
+
+.sandwich-boxes{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);  
+    min-height: 70vh;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.8s ease-in-out;
+    box-shadow: 3px 3px 8px #101820ff;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: scale(1.02);
+}
+
+h2{
+    font-size: 60px;
+    color: rgb(3, 202, 106);
+}
+
+.box img{
+    width: 100%;
+}
+
+.breakfast{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/src/assets/20220401_181304.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sandwich{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/src/assets/eaters-collective-uhJfaJ6c9fY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.vegetarian{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/src/assets/luis-covarrubias-ESXMLLiZcWU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.beverage{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/src/assets/brooke-lark-HjWzkqW1dgI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes light-effect{
+    0%{
+        text-shadow: 0px 0px 1.5px rgb(3, 202, 106);
+        transition: 0.8s ease-in-out;
+    }
+   50%{
+        text-shadow: 1px 1px 6px rgb(3, 202, 106);
+        transition: 0.8s ease-in-out;
+    }
+    100%{
+        text-shadow: 2px 2px 12px rgb(3, 202, 106);
+        transition: 0.8s ease-in-out;
+    }
+}
+
+/* contact styling */
+
+h1{
+    color: rgb(3, 202, 106);
+    font-size: 80px;
+}
+
+
+.contact-content{
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 8px #101820ff;   
+}
+
+.contact-content p{
+    width: 50%;
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.fa-solid{
+    margin-right: 15px;
+    color: rgb(3, 202, 106);
+}
+
+.sandwich-icon{
+    width: 30%;
+    height: 400px;
+    position: relative;
+    left: 35%;
+}
+
+/* menu styling */
+
+.menu-content{
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    margin: 20px auto;   
+}
+
+.food-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.food-img{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price{
+    color: rgb(3, 202, 106);
+    font-size: 21px;
+}
+
+.menu-item{
+    width: 70%;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: rgb(51, 53, 54);
+}
